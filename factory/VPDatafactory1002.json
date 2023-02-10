@@ -1,0 +1,9 @@
+{
+	"name": "VPDatafactory1002",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9a406b26-825d-40b3-9b17-a39956d4fe44",
+		"tenantId": "5b9c1028-2fc1-4687-8774-ede1e04f41a7"
+	}
+}
