@@ -21,8 +21,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "output_directory",
-				"fileSystem": "container1"
+				"fileName": {
+					"value": "@dataset().sink_filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().sink_outputdirectory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().sink_container",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
