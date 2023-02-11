@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "sumtotals-rawdata.csv",
-				"folderPath": "output_directory/sub directory/sub directory",
+				"folderPath": "output_directory",
 				"fileSystem": "container1"
 			}
 		}
