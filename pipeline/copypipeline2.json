@@ -124,6 +124,29 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Deletedataset1",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "output to process copy",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableLogging": true
+				}
 			}
 		],
 		"annotations": []
