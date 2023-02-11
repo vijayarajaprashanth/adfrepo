@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "Archive",
+				"fileName": "sumtotals-rawdata.csv",
+				"folderPath": "output_directory",
 				"container": "container1"
 			},
 			"columnDelimiter": ",",
