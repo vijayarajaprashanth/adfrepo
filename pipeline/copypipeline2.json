@@ -126,7 +126,7 @@
 				]
 			},
 			{
-				"name": "Deletedataset1",
+				"name": "Delete1",
 				"type": "Delete",
 				"dependsOn": [
 					{
@@ -145,7 +145,16 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableLogging": true
+					"dataset": {
+						"referenceName": "Deletedataset1",
+						"type": "DatasetReference"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
 				}
 			}
 		],
