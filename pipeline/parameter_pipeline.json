@@ -50,13 +50,41 @@
 				"inputs": [
 					{
 						"referenceName": "parasourceds",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"sds_container": {
+								"value": "@pipeline().parameters.pipe_container",
+								"type": "Expression"
+							},
+							"sds_inputdirectory": {
+								"value": "@pipeline().parameters.pipe_inputdirectory",
+								"type": "Expression"
+							},
+							"sds_filename": {
+								"value": "@pipeline().parameters.pipe_filename",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "parasinkds",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"sink_container": {
+								"value": "@pipeline().parameters.pipe_container",
+								"type": "Expression"
+							},
+							"sink_outputdirectory": {
+								"value": "@pipeline().parameters.pipe_outputdirectory",
+								"type": "Expression"
+							},
+							"sink_filename": {
+								"value": "@pipeline().parameters.pipe_filename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
