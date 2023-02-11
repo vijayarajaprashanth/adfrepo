@@ -5,6 +5,17 @@
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sink_container": {
+				"type": "string"
+			},
+			"sink_outputdirectory": {
+				"type": "string"
+			},
+			"sink_filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
