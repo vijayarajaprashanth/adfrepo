@@ -163,6 +163,22 @@
 						"enablePartitionDiscovery": false
 					}
 				}
+			},
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "input to output copy",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
 			}
 		],
 		"annotations": []
