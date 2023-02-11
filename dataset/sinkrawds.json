@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "SalesLTProduct.csv",
 				"folderPath": "Raw",
 				"fileSystem": "project"
 			},
