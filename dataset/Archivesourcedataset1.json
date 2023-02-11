@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"folderPath": "Archive",
 				"container": "container1"
 			},
 			"columnDelimiter": ",",
