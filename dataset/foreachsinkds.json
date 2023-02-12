@@ -19,7 +19,7 @@
 					"value": "@dataset().ds_filename",
 					"type": "Expression"
 				},
-				"folderPath": "Raw/sales",
+				"folderPath": "sales",
 				"fileSystem": "project"
 			},
 			"columnDelimiter": ",",
