@@ -124,7 +124,13 @@
 										"outputs": [
 											{
 												"referenceName": "foreachsinkmarketds",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_filename": {
+														"value": "@item().name",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
