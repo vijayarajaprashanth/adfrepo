@@ -4,7 +4,7 @@
 		"description": "copy of data from source to sink while changing the number of columns",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "unzipdata",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
