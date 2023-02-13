@@ -6,40 +6,30 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "sourceds",
+						"referenceName": "sourceofdf2",
 						"type": "DatasetReference"
 					},
-					"name": "source1",
-					"description": "import data from source"
-				}
-			],
-			"sinks": [
+					"name": "source1"
+				},
 				{
-					"name": "sink1"
+					"name": "source2"
 				}
 			],
-			"transformations": [
-				{
-					"name": "select1"
-				}
-			],
+			"sinks": [],
+			"transformations": [],
 			"scriptLines": [
 				"source(output(",
-				"          {ProductCategoryID     ParentProductCategoryID     Name     rowguid     ModifiedDate} as string",
+				"          ProductCategoryID as string,",
+				"          ParentProductCategoryID as string,",
+				"          Name as string,",
+				"          rowguid as string,",
+				"          ModifiedDate as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     inferDriftedColumnTypes: true,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 select(mapColumn(",
-				"          {ProductCategoryID     ParentProductCategoryID     Name     rowguid     ModifiedDate}",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1",
-				"select1 sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source2"
 			]
 		}
 	}
