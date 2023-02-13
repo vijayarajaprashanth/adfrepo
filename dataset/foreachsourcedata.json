@@ -19,7 +19,7 @@
 					"value": "@dataset().ds_filename",
 					"type": "Expression"
 				},
-				"folderPath": "Raw",
+				"folderPath": "AdventureWorksLT2012.zip/AdventureWorksLT2012",
 				"fileSystem": "project"
 			},
 			"columnDelimiter": ",",
