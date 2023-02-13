@@ -141,7 +141,10 @@
 										"outputs": [
 											{
 												"referenceName": "foreachsinkdata",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_filename": "@item().name"
+												}
 											}
 										]
 									}
