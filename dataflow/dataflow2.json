@@ -1,0 +1,29 @@
+{
+	"name": "dataflow2",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "sourceds",
+						"type": "DatasetReference"
+					},
+					"name": "source1",
+					"description": "import data from source"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          {ProductCategoryID     ParentProductCategoryID     Name     rowguid     ModifiedDate} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
+				"     ignoreNoFilesFound: false) ~> source1"
+			]
+		}
+	}
+}
