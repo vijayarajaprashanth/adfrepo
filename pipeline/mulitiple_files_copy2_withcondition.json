@@ -90,11 +90,39 @@
 													"type": "DelimitedTextReadSettings"
 												}
 											},
-											"enableStaging": false
+											"sink": {
+												"type": "DelimitedTextSink",
+												"storeSettings": {
+													"type": "AzureBlobFSWriteSettings"
+												},
+												"formatSettings": {
+													"type": "DelimitedTextWriteSettings",
+													"quoteAllText": true,
+													"fileExtension": ".txt"
+												}
+											},
+											"enableStaging": false,
+											"translator": {
+												"type": "TabularTranslator",
+												"typeConversion": true,
+												"typeConversionSettings": {
+													"allowDataTruncation": true,
+													"treatBooleanAsNumber": false
+												}
+											}
 										},
 										"inputs": [
 											{
 												"referenceName": "foreachsourcedata",
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_filename": "@item().name"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "foreachsinkdata",
 												"type": "DatasetReference",
 												"parameters": {
 													"ds_filename": "@item().name"
