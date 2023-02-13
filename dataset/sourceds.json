@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesLTProductCategory.txt",
-				"folderPath": "unzipped_data/AdventureWorksLT2012.zip/AdventureWorksLT2012",
+				"fileName": "SalesLTProductCategory.csv",
+				"folderPath": "unzipped_data/AdventureWorksLT2012.zip/Raw",
 				"fileSystem": "project"
 			},
 			"columnDelimiter": ",",
