@@ -1,0 +1,29 @@
+{
+	"name": "sourceds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "SalesLTProductCategory.txt",
+				"folderPath": "unzipped_data/AdventureWorksLT2012.zip/AdventureWorksLT2012",
+				"fileSystem": "project"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ProductCategoryID\tParentProductCategoryID\tName\trowguid\tModifiedDate",
+				"type": "String"
+			}
+		]
+	}
+}
