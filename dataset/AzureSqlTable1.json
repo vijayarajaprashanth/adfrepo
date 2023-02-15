@@ -10,18 +10,16 @@
 		"schema": [
 			{
 				"name": "SUM",
-				"type": "int",
-				"precision": 10
+				"type": "varchar"
 			},
 			{
 				"name": "TOTAL",
-				"type": "int",
-				"precision": 10
+				"type": "varchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "sum_total"
+			"table": "sum_total_string"
 		}
 	}
 }
