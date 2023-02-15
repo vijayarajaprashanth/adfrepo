@@ -7,10 +7,21 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "SUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TOTAL",
+				"type": "int",
+				"precision": 10
+			}
+		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "SUM_TOTAL_COLUMN"
+			"table": "sum_total"
 		}
 	}
 }
