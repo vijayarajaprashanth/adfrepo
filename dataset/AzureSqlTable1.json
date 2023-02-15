@@ -21,7 +21,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "sum_totals"
+			"table": "SUM_TOTALFINAL"
 		}
 	}
 }
