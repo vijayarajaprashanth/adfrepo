@@ -9,17 +9,19 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "SUM",
-				"type": "varchar"
+				"name": "sum",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "TOTAL",
-				"type": "varchar"
+				"name": "totals",
+				"type": "int",
+				"precision": 10
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "sum_total_string"
+			"table": "sum_totals"
 		}
 	}
 }
