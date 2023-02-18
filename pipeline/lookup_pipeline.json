@@ -23,7 +23,7 @@
 						{
 							"type": "Query",
 							"text": {
-								"value": "insert into [dbo].[emp] values ('a','b');",
+								"value": "@insert into [dbo].[emp] values (pipeline().Pipeline,pipeline().RunId);",
 								"type": "Expression"
 							}
 						}
