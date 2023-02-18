@@ -106,7 +106,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"ds_filename": {
-											"value": "@item()",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
@@ -118,7 +118,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"ds_filename": {
-											"value": "@item()",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
