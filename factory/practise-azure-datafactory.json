@@ -1,0 +1,9 @@
+{
+	"name": "practise-azure-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7ee710ec-cfe0-4ef4-a48b-6aabebc04471",
+		"tenantId": "5b927164-fd3a-417f-b9fd-ebf4ad3d5aaf"
+	}
+}
