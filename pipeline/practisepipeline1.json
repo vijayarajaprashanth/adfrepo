@@ -62,20 +62,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"pipe_container": {
-				"type": "String"
-			},
-			"pipe_input": {
-				"type": "String"
-			},
-			"pipe_filename": {
-				"type": "String"
-			},
-			"pipe_output": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
