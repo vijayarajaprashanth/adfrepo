@@ -78,7 +78,7 @@
 								"value": "@pipeline().parameters.outputdirectory",
 								"type": "Expression"
 							},
-							"sink_filename": {
+							"sink_filename1": {
 								"value": "@pipeline().parameters.filename",
 								"type": "Expression"
 							}
