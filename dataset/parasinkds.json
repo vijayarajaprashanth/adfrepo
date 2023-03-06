@@ -9,7 +9,7 @@
 			"sink_container": {
 				"type": "string"
 			},
-			"sink_outputdirectory": {
+			"sink_output": {
 				"type": "string"
 			},
 			"sink_filename": {
