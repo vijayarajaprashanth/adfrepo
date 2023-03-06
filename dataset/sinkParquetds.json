@@ -1,0 +1,41 @@
+{
+	"name": "sinkParquetds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file_ds": {
+				"type": "string"
+			},
+			"directory_ds": {
+				"type": "string"
+			},
+			"filename_ds": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().filename_ds",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory_ds",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().file_ds",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
