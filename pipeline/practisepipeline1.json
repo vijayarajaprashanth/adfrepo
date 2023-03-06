@@ -91,15 +91,6 @@
 			}
 		],
 		"parameters": {
-			"file_ds": {
-				"type": "String"
-			},
-			"directory_ds": {
-				"type": "String"
-			},
-			"filename_ds": {
-				"type": "String"
-			},
 			"pipe_container": {
 				"type": "String"
 			},
