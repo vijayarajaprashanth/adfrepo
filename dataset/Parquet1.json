@@ -5,13 +5,34 @@
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sink_file": {
+				"type": "string"
+			},
+			"sink_outputdirectory": {
+				"type": "string"
+			},
+			"sink_filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "staging_layer/raw_layer",
-				"fileSystem": "adventure-practise"
+				"fileName": {
+					"value": "@dataset().sink_filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().sink_outputdirectory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().sink_file",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
