@@ -79,7 +79,7 @@
 								"type": "Expression"
 							},
 							"sink_filename1": {
-								"value": "@pipeline().parameters.filename",
+								"value": "@pipeline().parameters.filename1",
 								"type": "Expression"
 							}
 						}
@@ -98,6 +98,9 @@
 				"type": "String"
 			},
 			"filename": {
+				"type": "String"
+			},
+			"filename1": {
 				"type": "String"
 			}
 		},
