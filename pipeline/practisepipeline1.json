@@ -51,41 +51,13 @@
 				"inputs": [
 					{
 						"referenceName": "Sourcezipds",
-						"type": "DatasetReference",
-						"parameters": {
-							"so_container": {
-								"value": "@pipeline().parameters.pipe_container",
-								"type": "Expression"
-							},
-							"so_input": {
-								"value": "@pipeline().parameters.pipe_input",
-								"type": "Expression"
-							},
-							"so_filename": {
-								"value": "@pipeline().parameters.pipe_filename",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "sinkParquetds",
-						"type": "DatasetReference",
-						"parameters": {
-							"si_container": {
-								"value": "@pipeline().parameters.pipe_container",
-								"type": "Expression"
-							},
-							"si_output": {
-								"value": "@pipeline().parameters.pipe_output",
-								"type": "Expression"
-							},
-							"si_filename": {
-								"value": "@pipeline().parameters.pipe_filename",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
