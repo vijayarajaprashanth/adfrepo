@@ -9,7 +9,7 @@
 			"ds_container": {
 				"type": "string"
 			},
-			"ds_input": {
+			"ds_sourcedirectory": {
 				"type": "string"
 			},
 			"ds_filename": {
