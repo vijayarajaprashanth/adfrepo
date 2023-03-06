@@ -5,34 +5,14 @@
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"si_container": {
-				"type": "string"
-			},
-			"si_output": {
-				"type": "string"
-			},
-			"si_filename": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().si_filename",
-					"type": "Expression"
-				},
-				"folderPath": {
-					"value": "@dataset().si_output",
-					"type": "Expression"
-				},
-				"fileSystem": {
-					"value": "@dataset().si_container",
-					"type": "Expression"
-				}
+				"fileName": "advworksunzipped",
+				"folderPath": "staging_layer/raw_layer",
+				"fileSystem": "adventure-practise"
 			},
 			"compressionCodec": "snappy"
 		},
