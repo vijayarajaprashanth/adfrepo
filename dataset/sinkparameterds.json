@@ -9,7 +9,7 @@
 			"ds_container": {
 				"type": "string"
 			},
-			"ds_output": {
+			"ds_sinkdirectory": {
 				"type": "string"
 			},
 			"ds_filename": {
