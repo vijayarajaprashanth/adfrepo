@@ -12,7 +12,7 @@
 			"sink_outputdirectory": {
 				"type": "string"
 			},
-			"sink_filename": {
+			"sink_filename1": {
 				"type": "string"
 			}
 		},
@@ -22,7 +22,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().sink_filename",
+					"value": "@dataset().sink_filename1",
 					"type": "Expression"
 				},
 				"folderPath": {
