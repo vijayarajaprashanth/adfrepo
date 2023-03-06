@@ -9,7 +9,7 @@
 			"sds_container": {
 				"type": "string"
 			},
-			"sds_inputdirectory": {
+			"sds_input": {
 				"type": "string"
 			},
 			"sds_filename": {
