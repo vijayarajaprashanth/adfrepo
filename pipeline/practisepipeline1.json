@@ -1,0 +1,106 @@
+{
+	"name": "practisepipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "unzip",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"compressionProperties": {
+								"type": "ZipDeflateReadSettings"
+							}
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Sourcezipds",
+						"type": "DatasetReference",
+						"parameters": {
+							"file_ds": {
+								"value": "@pipeline().parameters.file_ds",
+								"type": "Expression"
+							},
+							"directory_ds": {
+								"value": "@pipeline().parameters.directory_ds",
+								"type": "Expression"
+							},
+							"filename_ds": {
+								"value": "@pipeline().parameters.filename_ds",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "sinkParquetds",
+						"type": "DatasetReference",
+						"parameters": {
+							"file_ds": {
+								"value": "@pipeline().parameters.file_ds",
+								"type": "Expression"
+							},
+							"directory_ds": {
+								"value": "@pipeline().parameters.directory_ds",
+								"type": "Expression"
+							},
+							"filename_ds": {
+								"value": "@pipeline().parameters.filename_ds",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"parameters": {
+			"file_ds": {
+				"type": "String"
+			},
+			"directory_ds": {
+				"type": "String"
+			},
+			"filename_ds": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
