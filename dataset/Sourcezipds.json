@@ -15,7 +15,7 @@
 				"fileSystem": "adventure-practise"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "ZipDeflate",
+			"compressionCodec": "deflate",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
