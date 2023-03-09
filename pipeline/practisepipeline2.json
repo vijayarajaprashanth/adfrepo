@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('practiseGetMetadata1').output",
+						"value": "@activity('practiseGetMetadata1').output.childItems",
 						"type": "Expression"
 					},
 					"isSequential": true,
