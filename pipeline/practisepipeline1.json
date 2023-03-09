@@ -113,7 +113,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Practisegetmetadata",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename1": {
+								"value": "@activity('unzip').output",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"columnCount",
@@ -203,13 +209,25 @@
 							"inputs": [
 								{
 									"referenceName": "sourceforeachds",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename1": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "Parquet2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename1": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
