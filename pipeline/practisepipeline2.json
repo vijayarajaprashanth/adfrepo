@@ -79,7 +79,13 @@
 							"outputs": [
 								{
 									"referenceName": "Parquet2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
