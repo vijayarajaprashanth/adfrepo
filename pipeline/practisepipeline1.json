@@ -64,23 +64,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"file": {
-				"type": "String"
-			},
-			"inputdirectory": {
-				"type": "String"
-			},
-			"outputdirectory": {
-				"type": "String"
-			},
-			"filename": {
-				"type": "String"
-			},
-			"filename1": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
