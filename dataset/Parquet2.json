@@ -15,10 +15,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().filename1",
-					"type": "Expression"
-				},
 				"folderPath": "Bronze_layer",
 				"fileSystem": "adventure-practise"
 			},
