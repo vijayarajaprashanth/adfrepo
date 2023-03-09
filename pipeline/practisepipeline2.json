@@ -102,25 +102,13 @@
 							"inputs": [
 								{
 									"referenceName": "sourceforeachds",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename1": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "Parquet2",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename1": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
