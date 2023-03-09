@@ -23,16 +23,21 @@
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "DelimitedTextReadSettings",
+							"compressionProperties": {
+								"type": "ZipDeflateReadSettings"
+							}
 						}
 					},
 					"sink": {
-						"type": "ParquetSink",
+						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "ParquetWriteSettings"
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -67,22 +72,8 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
-						"type": "DatasetReference",
-						"parameters": {
-							"sink_file": {
-								"value": "@pipeline().parameters.file",
-								"type": "Expression"
-							},
-							"sink_outputdirectory": {
-								"value": "@pipeline().parameters.outputdirectory",
-								"type": "Expression"
-							},
-							"sink_filename1": {
-								"value": "@pipeline().parameters.filename1",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "sinkunzipdspractise",
+						"type": "DatasetReference"
 					}
 				]
 			}
