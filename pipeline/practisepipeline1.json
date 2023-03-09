@@ -73,7 +73,21 @@
 				"outputs": [
 					{
 						"referenceName": "sinkunzipdspractise",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"file": {
+								"value": "@pipeline().parameters.file",
+								"type": "Expression"
+							},
+							"outputdirectory": {
+								"value": "@pipeline().parameters.outputdirectory",
+								"type": "Expression"
+							},
+							"filename1": {
+								"value": "@pipeline().parameters.filename1",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
