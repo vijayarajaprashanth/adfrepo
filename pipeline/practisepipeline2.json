@@ -98,7 +98,6 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"childItems",
 						"exists",
 						"itemName",
 						"itemType",
