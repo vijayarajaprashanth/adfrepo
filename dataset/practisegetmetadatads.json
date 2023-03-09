@@ -13,7 +13,7 @@
 				"folderPath": "raw_layer/AdventureWorksLT2012.zip",
 				"fileSystem": "adventure-practise"
 			},
-			"columnDelimiter": "\t",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
