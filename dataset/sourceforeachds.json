@@ -19,7 +19,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
-				"folderPath": "raw_layer/AdventureWorksLT2012.zip/AdventureWorksLT2012",
+				"folderPath": "raw_layer/AdventureWorksLT2012.zip",
 				"fileSystem": "adventure-practise"
 			},
 			"columnDelimiter": "\t",
