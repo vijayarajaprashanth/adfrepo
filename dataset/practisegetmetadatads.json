@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "unzip",
-				"folderPath": "raw_layer",
+				"folderPath": "raw_layer/AdventureWorksLT2012.zip",
 				"fileSystem": "adventure-practise"
 			},
 			"columnDelimiter": "\t",
