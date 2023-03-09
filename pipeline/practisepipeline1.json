@@ -115,7 +115,15 @@
 						"referenceName": "Practisegetmetadata",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"columnCount",
+						"itemName",
+						"itemType",
+						"lastModified",
+						"size",
+						"structure",
+						"exists"
+					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
