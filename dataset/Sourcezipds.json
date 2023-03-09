@@ -9,7 +9,10 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "AdventureWorksLT2012.zip",
+				"folderPath": "staging_layer",
+				"fileSystem": "adventure-practise"
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "ZipDeflate",
