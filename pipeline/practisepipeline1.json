@@ -53,41 +53,13 @@
 				"inputs": [
 					{
 						"referenceName": "Sourcezipds",
-						"type": "DatasetReference",
-						"parameters": {
-							"source_file": {
-								"value": "@pipeline().parameters.file",
-								"type": "Expression"
-							},
-							"source_inputdirectory": {
-								"value": "@pipeline().parameters.inputdirectory",
-								"type": "Expression"
-							},
-							"source_filename": {
-								"value": "@pipeline().parameters.filename",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "sinkunzipdspractise",
-						"type": "DatasetReference",
-						"parameters": {
-							"file": {
-								"value": "@pipeline().parameters.file",
-								"type": "Expression"
-							},
-							"outputdirectory": {
-								"value": "@pipeline().parameters.outputdirectory",
-								"type": "Expression"
-							},
-							"filename1": {
-								"value": "@pipeline().parameters.filename1",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
