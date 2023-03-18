@@ -1,0 +1,33 @@
+{
+	"name": "pipelinefordatabricks",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/vijayarajaprashanth1@gmail.com/Karthic-Notebook",
+					"baseParameters": {
+						"Enter File Path": "/FileStore/tables/SalesLTProduct.txt",
+						"color_filter": "Red",
+						"table_name": "sales_lt_product"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
